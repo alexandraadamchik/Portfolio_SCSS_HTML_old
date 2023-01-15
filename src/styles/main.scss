@@ -12,7 +12,7 @@
  body{
 	
 	background-color: $primary;
-	border: 5px solid rebeccapurple;
+	/* border: 5px solid rebeccapurple; */
 
  }
 
@@ -20,21 +20,23 @@
  .mainPage{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	
 
  
 
  .mainText{
-	padding-left: 100px;
-    padding-top: 2%;
+	
+    padding-top: 5%;
+	margin-left: 25%;
     float: left;
 	font-size: 18rem;
-	line-height: 17rem;
+	line-height: 25rem;
 	color: $danger;
 	letter-spacing: -0.5rem;
 	font-weight: 550;
-	border: 1px solid green;
+	/* border: 1px solid green; */
 	position: absolute;
+
 
 
 
@@ -46,10 +48,12 @@
 
 
 .mainPhoto{
-	max-width: 80%;
-    max-height:80%;
+	max-width: 85%;
+    max-height:85%;
 	flex-grow: 2;
-    float: left;
-	border: 1px solid blue;
+    float: right;
+	margin-left: 15%;
+	margin-top: -5%;
+/* 	border: 1px solid blue; */
 }
 }
