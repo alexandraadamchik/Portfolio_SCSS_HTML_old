@@ -4,47 +4,52 @@
 
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "base";
+
 
 // Write your sass code here or import partials
 
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
  body{
-	/* border: 1px solid green; */
+	
 	background-color: $primary;
+	border: 5px solid rebeccapurple;
+
  }
 
 
  .mainPage{
-	display:flex;
+	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: stretch;
-	border: 1px solid red;
+	justify-content: center;
+
  
 
  .mainText{
-	display: flexbox;
-	font-size: 10rem;
+	padding-left: 100px;
+    padding-top: 2%;
+    float: left;
+	font-size: 18rem;
+	line-height: 17rem;
 	color: $danger;
 	letter-spacing: -0.5rem;
-	font-weight: 530;
+	font-weight: 550;
 	border: 1px solid green;
+	position: absolute;
+
+
+
+	.hello{
+		color: $secondary;}
 }
+
+
+
 
 .mainPhoto{
-	display:block;
-	width: 500px;
-	height: 100%;
-	/* background-color: transparent; */
-	border-color: 1px solid blue;
+	max-width: 80%;
+    max-height:80%;
+	flex-grow: 2;
+    float: left;
+	border: 1px solid blue;
 }
- 
-.hello{
-	/* border: 1px solid yellowgreen; */
-	color: $secondary;
-
- }}
+}
