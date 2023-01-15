@@ -14,26 +14,37 @@
 }
  body{
 	/* border: 1px solid green; */
-	background-color: $primary;	
+	background-color: $primary;
  }
 
- section{
+
+ .mainPage{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: stretch;
 	border: 1px solid red;
+ 
+
+ .mainText{
+	display: flexbox;
 	font-size: 10rem;
 	color: $danger;
 	letter-spacing: -0.5rem;
 	font-weight: 530;
+	border: 1px solid green;
 }
 
-img{
-	width: 300px;
-	height: 200px;
-	background-color: transparent;
-	object-position: 0 0;
-	border-color: 3px solid aquamarine;
+.mainPhoto{
+	display:block;
+	width: 500px;
+	height: 100%;
+	/* background-color: transparent; */
+	border-color: 1px solid blue;
 }
  
 .hello{
 	/* border: 1px solid yellowgreen; */
 	color: $secondary;
- }
+
+ }}
