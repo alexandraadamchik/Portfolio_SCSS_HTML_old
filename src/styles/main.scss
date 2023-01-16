@@ -13,47 +13,113 @@
 	
 	background-color: $primary;
 	/* border: 5px solid rebeccapurple; */
-
  }
-
 
  .mainPage{
 	display: flex;
 	flex-direction: row;
 	
-
- 
-
- .mainText{
-	
-    padding-top: 5%;
+ .main-textSection{
+	color: $danger;
 	margin-left: 25%;
+	margin-top: 5%;
     float: left;
 	font-size: 18rem;
-	line-height: 25rem;
-	color: $danger;
 	letter-spacing: -0.5rem;
 	font-weight: 550;
-	/* border: 1px solid green; */
 	position: absolute;
-
-
-
-
+	/* border: 5px solid green; */
+	
+	
 	.hello{
-		color: $secondary;}
+		color: black;
+		position: relative;
+		animation-name: anim-lineUp;
+		animation-duration: 3s;
+		animation-timing-function: cubic-bezier (.01,.97,.98,.03);
+		animation-iteration-count:1;
+		animation-direction: normal;
+		animation-fill-mode: forwards;
+		animation-delay: 0s;
+		/* background-color: blue; */
+		  }
+		 
+	.iam{
+	
+		animation-name: anim-lineUp;
+		animation-duration: 3s;
+		animation-timing-function: cubic-bezier (.01,.97,.98,.03);
+		animation-iteration-count:1;
+		animation-direction: normal;
+		animation-fill-mode: forwards;
+		animation-delay: 0s;
 }
 
+	.name{
+		animation-name: anim-lineUp;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier (.01,.97,.98,.03);
+		animation-iteration-count:1;
+		animation-direction: normal;
+		animation-fill-mode: forwards;
+		animation-delay: 0s;
+		
+		a{
+		color: $danger;
+		text-decoration: none;
+		}
+	}
 
 
+	@keyframes anim-lineUp {
+		0% {
+			transform: translateY(30vh);
+			opacity: 0;
+			font-size: 0;
+		}
+		
+		50%{
+			color: black;
+			opacity: 1;
+			font-size: 9rem;
+		}
+
+
+		to {
+			transform: translateY(0%);
+			opacity: 1;
+			color: white;
+			font-size: 18rem;
+		}
+	  }
+	
+	/* @keyframes anim-lineUp {
+		0% {
+		  opacity: 0;
+		  transform: translateY(80%);
+		}
+		20% {
+		  opacity: 0;
+		}
+		50% {
+		  opacity: 1;
+		  transform: translateY(0%);
+		}
+		100% {
+		  opacity: 1;
+		  transform: translateY(0%);
+		}
+	  } */
+	}
+}
 
 .mainPhoto{
-	max-width: 85%;
-    max-height:85%;
+	max-width: 90%;
+    max-height:90%;
 	flex-grow: 2;
     float: right;
-	margin-left: 15%;
-	margin-top: -5%;
+	margin-left: 10%;
+	margin-top: -8%;
 /* 	border: 1px solid blue; */
 }
-}
+ 
