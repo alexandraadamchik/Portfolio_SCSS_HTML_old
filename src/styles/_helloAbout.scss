@@ -1,0 +1,27 @@
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "base";
+
+
+.alexandraWorks{
+    color: $secondary;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2rem;
+    font-weight: 7px;
+}
+
+
+h1{
+    color: $secondary;
+    
+    position: absolute;
+    top:25%;
+    left: 25%;
+    right: 20%;
+    font-size: 13rem;
+    font-weight: 600;
+
+
+}

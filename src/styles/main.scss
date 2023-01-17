@@ -1,125 +1,111 @@
-// @import "base";
-// You need the base only when you are not using bootstrap. In that case, go to _base.scss
-// to customize it as you may want.
 
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "base";
+@import "helloAbout";
+@import "iamWork";
+@import "alexContact";
 
-
-// Write your sass code here or import partials
-
- body{
-	
-	background-color: $primary;
-	/* border: 5px solid rebeccapurple; */
- }
-
- .mainPage{
-	display: flex;
-	flex-direction: row;
-	
- .main-textSection{
-	color: $danger;
-	margin-left: 25%;
-	margin-top: 5%;
-    float: left;
-	font-size: 18rem;
-	letter-spacing: -0.5rem;
-	font-weight: 550;
-	position: absolute;
-	/* border: 5px solid green; */
-	
-	
-	.hello{
-		color: black;
-		position: relative;
-		animation-name: anim-lineUp;
-		animation-duration: 3s;
-		animation-timing-function: cubic-bezier (.01,.97,.98,.03);
-		animation-iteration-count:1;
-		animation-direction: normal;
-		animation-fill-mode: forwards;
-		animation-delay: 0s;
-		/* background-color: blue; */
-		  }
-		 
-	.iam{
-	
-		animation-name: anim-lineUp;
-		animation-duration: 3s;
-		animation-timing-function: cubic-bezier (.01,.97,.98,.03);
-		animation-iteration-count:1;
-		animation-direction: normal;
-		animation-fill-mode: forwards;
-		animation-delay: 0s;
+body{
+  background-color: $primary;
 }
 
-	.name{
-		animation-name: anim-lineUp;
-		animation-duration: 1s;
-		animation-timing-function: cubic-bezier (.01,.97,.98,.03);
-		animation-iteration-count:1;
-		animation-direction: normal;
-		animation-fill-mode: forwards;
-		animation-delay: 0s;
-		
-		a{
-		color: $danger;
-		text-decoration: none;
-		}
-	}
+h1{
+  color: $secondary;
+  
+  position: absolute;
+  top:25%;
+  left: 25%;
+  right: 20%;
+  font-size: 13rem;
+  font-weight: 600;
 
-
-	@keyframes anim-lineUp {
-		0% {
-			transform: translateY(30vh);
-			opacity: 0;
-			font-size: 0;
-		}
-		
-		50%{
-			color: black;
-			opacity: 1;
-			font-size: 9rem;
-		}
-
-
-		to {
-			transform: translateY(0%);
-			opacity: 1;
-			color: white;
-			font-size: 18rem;
-		}
-	  }
-	
-	/* @keyframes anim-lineUp {
-		0% {
-		  opacity: 0;
-		  transform: translateY(80%);
-		}
-		20% {
-		  opacity: 0;
-		}
-		50% {
-		  opacity: 1;
-		  transform: translateY(0%);
-		}
-		100% {
-		  opacity: 1;
-		  transform: translateY(0%);
-		}
-	  } */
-	}
 }
 
-.mainPhoto{
-	max-width: 90%;
-    max-height:90%;
-	flex-grow: 2;
-    float: right;
-	margin-left: 10%;
-	margin-top: -8%;
-/* 	border: 1px solid blue; */
+.mainPage {
+  display: flex;
+  flex-direction: row;
+
+  .mainText {
+    color: $primary;
+    margin-top: 8%;
+    margin-left: 10%;
+    font-size: 18rem;
+    font-weight: 560;
+    line-height: 1em;
+    letter-spacing: -1rem;
+    position: absolute;
+
+    .hello {
+      color: $secondary;
+      position: fixed;
+      
+
+      a {
+        color: $secondary;
+        position: absolute;
+        text-decoration: none;
+        animation: myAnim 2s normal;
+       
+      }
+    }
+
+    .iam {
+      color: $primary;
+      position: fixed;
+      top: 350px;
+      
+
+      a {
+        white-space: nowrap;
+        position:absolute;
+        animation: myAnim 2s 1s normal;
+        text-decoration: none;
+        color: $primary;
+      }
+    }
+
+    .name {
+      color: $primary;
+      position: fixed;
+      top: 550px;
+    
+
+      a {
+        position: absolute;
+        
+        text-decoration: none;
+        animation: myAnim 2s 3s normal;
+        color: $primary;
+      }
+    }
+
+
+    @keyframes myAnim {
+      0% {
+        color: $primary;
+        animation-timing-function: linear;
+        transform: translateY(90px);
+      }
+    
+      25%, 50% {
+        color: $danger;
+    }
+
+      100% {
+        color: $danger;
+        animation-timing-function: linear;
+        transform: translateY(0px);
+      }
+    }
+  }
 }
- 
+
+.mainPhoto {
+  max-width: 90%;
+  max-height: 90%;
+  margin-left: 10%;
+  margin-top: -10%;
+  /* 	border: 1px solid blue; */
+}
+
