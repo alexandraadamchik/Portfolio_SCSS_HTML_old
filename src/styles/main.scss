@@ -61,11 +61,11 @@ li {
     line-height: 1em;
     letter-spacing: -1rem;
     position: absolute;
- 
+
     /* HELLO */
     .hello {
       color: $secondary;
-      position: fixed; 
+      position: fixed;
       a {
         white-space: nowrap;
         position: absolute;
@@ -73,105 +73,41 @@ li {
         text-decoration: none;
         color: $secondary;
       }
-    
-  }
-}
-
-.iam {
-  /* I AM */
-  color: $secondary;
-  position: fixed;
-  top: 350px;
-
-  a {
-    white-space: nowrap;
-    position: absolute;
-    animation: myAnim 1s 2s normal;
-    text-decoration: none;
-    color: $secondary;
-  }
-}
-
-.name {
-  /* ALEXANDRA */
-  color: $secondary;
-  position: fixed;
-  top: 550px;
-
-  a {
-    position: absolute;
-
-    text-decoration: none;
-    animation: myAnim 1s 3s normal;
-    color: $secondary;
-  }
-}
-
-/* ------------------------------------------------PHOTO-------------------------------------------------------------------*/
-
-.photoContainer {
-  z-index: -9;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 35%;
-  background-image: url("../img/AlexandraMaintest.png");
-  background-repeat: no-repeat;
-}
-
-
-
-/* --------------------------------ANIMATION FOR HELLO IAM ALEXANDRA-----------------------------------------------------*/
-
-@keyframes myAnim {
-  0% {
-    color: $secondary;
-    animation-timing-function: linear;
-    transform: translateY(90px);
-  }
-
-  25%,
-  50% {
-    color: $danger;
-  }
-
-  100% {
-    color: $danger;
-    animation-timing-function: linear;
-    transform: translateY(0px);
-  }
-}
-
-
-
-/*--------------------------------------------PHONES & TABLETS (Small devices (portrait tablets and large phones, 600px and up))-------------------------------------------------------------*/
-
-
-@media only screen and (min-width: 600px) {
-  .photoContainer {
-    z-index: -9;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    /* left: 20%; */
-    background-size: cover;}
-
-  .textContainer {
-    a{
-      font-size: 100px;
-      font-weight: 560;
-      line-height: 70px;
-      letter-spacing: 1rem;
-      
-      
     }
   }
-}
-/*------------------------------------------- LAPTOPS & BIG SCREENS (Medium devices (landscape tablets, 768px and up)----------------------------------------------------------*/
 
-@media only screen and (min-width: 768px) {
+  .iam {
+    /* I AM */
+    color: $secondary;
+    position: fixed;
+    top: 350px;
+
+    a {
+      white-space: nowrap;
+      position: absolute;
+      animation: myAnim 1s 2s normal;
+      text-decoration: none;
+      color: $secondary;
+    }
+  }
+
+  .name {
+    /* ALEXANDRA */
+    color: $secondary;
+    position: fixed;
+    top: 550px;
+
+    a {
+      position: absolute;
+
+      text-decoration: none;
+      animation: myAnim 1s 3s normal;
+      color: $secondary;
+    }
+  }
+
+  /* ------------------------------------------------PHOTO-------------------------------------------------------------------*/
+
   .photoContainer {
     z-index: -9;
     position: fixed;
@@ -179,18 +115,72 @@ li {
     right: 0;
     bottom: 0;
     left: 35%;
-    background-size: cover;
-
-    
+    background-image: url("../img/AlexandraMaintest.png");
+    background-repeat: no-repeat;
   }
-  .textContainer {
-    a{
-      font-size: 150px;
-      font-weight: 660;
-      line-height: 200px;
-      letter-spacing: 1rem;
-      
+
+  /* --------------------------------ANIMATION FOR HELLO IAM ALEXANDRA-----------------------------------------------------*/
+
+  @keyframes myAnim {
+    0% {
+      color: $secondary;
+      animation-timing-function: linear;
+      transform: translateY(90px);
+    }
+
+    25%,
+    50% {
+      color: $danger;
+    }
+
+    100% {
+      color: $danger;
+      animation-timing-function: linear;
+      transform: translateY(0px);
     }
   }
-}
+
+  /*--------------------------------------------PHONES & TABLETS (Small devices (portrait tablets and large phones, 600px and up))-------------------------------------------------------------*/
+
+  @media only screen and (min-width: 600px) {
+    .photoContainer {
+      z-index: -9;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      /* left: 20%; */
+      background-size: cover;
+    }
+
+    .textContainer {
+      a {
+        font-size: 100px;
+        font-weight: 560;
+        line-height: 70px;
+        letter-spacing: 1rem;
+      }
+    }
+  }
+  /*------------------------------------------- LAPTOPS & BIG SCREENS (Medium devices (landscape tablets, 768px and up)----------------------------------------------------------*/
+
+  @media only screen and (min-width: 768px) {
+    .photoContainer {
+      z-index: -9;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 35%;
+      background-size: cover;
+    }
+    .textContainer {
+      a {
+        font-size: 150px;
+        font-weight: 660;
+        line-height: 200px;
+        letter-spacing: 1rem;
+      }
+    }
+  }
 }
