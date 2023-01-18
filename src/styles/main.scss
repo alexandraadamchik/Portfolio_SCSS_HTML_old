@@ -70,9 +70,9 @@ li {
       a {
         color: $secondary;
         position: absolute;
-        animation: myAnim 2s normal;
+        animation: myAnim 1s normal;
       }
-    }
+    }}}
 
     .iam {
       /* I AM */
@@ -83,7 +83,7 @@ li {
       a {
         white-space: nowrap;
         position: absolute;
-        animation: myAnim 2s 1s normal;
+        animation: myAnim 1s 1s normal;
         text-decoration: none;
         color: $secondary;
       }
@@ -99,12 +99,12 @@ li {
         position: absolute;
 
         text-decoration: none;
-        animation: myAnim 2s 3s normal;
+        animation: myAnim 1s 2s normal;
         color: $secondary;
       }
     }
 
-    /* --------------------------------KEYfRAMES FOR HELLO IAM ALEXANDRA-------------------------------------*/
+    /* --------------------------------ANIMATION FOR HELLO IAM ALEXANDRA-----------------------------------------------------*/
 
     @keyframes myAnim {
       0% {
@@ -124,8 +124,7 @@ li {
         transform: translateY(0px);
       }
     }
-  }
-}
+  
 
 /* ------------------------------------------------PHOTO-------------------------------------------------------------------*/
 
@@ -140,23 +139,45 @@ li {
   background-repeat: no-repeat;
 }
 
+/*--------------------------------------------PHONES & TABLETS -------------------------------------------------------------*/
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px)*/
-.mainPhoto {
-  max-width: 90%;
-  min-height: 100%;
-  margin-left: 10%;
-  margin-top: -10%;
-  /* border: 1px solid blue; */
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .mainPhoto {
     max-width: 90%;
-    max-height: 90%;
-    margin-left: 10%;
+    height: 900px;
+    margin-right: 10%;
     margin-top: -10%;
-    /* border: 1px solid blue; */
+  }
+    .mainText {
+      div {
+        font-size: 50px;
+        font-weight: 560;
+        line-height: 5px;
+        letter-spacing: 1rem;
+        margin-bottom: 3px;
+      }
   }
 }
+/*------------------------------------------- LAPTOPS&BIG SCREENS ----------------------------------------------------------*/
+  /* Medium devices (landscape tablets, 768px and up) */
+
+  @media only screen and (min-width: 768px) {
+    .mainPhoto {
+      width: 90%;
+      height: 100%;
+      margin-left: 10%;
+      margin-top: -10%;
+      /* border: 1px solid blue; */
+    }
+    .mainText {
+      div {
+        font-size: 50px;
+        font-weight: 560;
+        line-height: 5px;
+        letter-spacing: 1rem;
+        margin-bottom: 3px;
+      }
+   
+    }
+  }
